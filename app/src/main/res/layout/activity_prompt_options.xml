@@ -1,0 +1,47 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.louis.testing.PrompOptions"
+        android:background="@drawable/bg">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="275dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_nowords"
+            android:id="@+id/heart"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:src="@drawable/child_age"
+            android:id="@+id/logo"
+            android:layout_below="@id/heart"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/button2"
+            android:onClick="belowFive"
+            android:src="@drawable/age1"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="aboveFive"
+            android:id="@+id/button"
+            android:src="@drawable/age2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

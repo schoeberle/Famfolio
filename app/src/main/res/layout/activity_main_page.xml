@@ -1,0 +1,55 @@
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        tools:context="com.example.louis.testing.MainPage">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:id="@+id/logo" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/prompt_small"
+            android:id="@+id/promptButton"
+            android:onClick="goPrompt"
+            android:background="@null"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:id="@+id/cameraButton"
+            android:src="@drawable/camera_small"
+            android:onClick="photoTime"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/promptButton"
+            android:layout_centerHorizontal="true" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:src="@drawable/send_small"
+            android:layout_marginTop="50dp"
+            android:onClick="goSendIntent"
+            android:id="@+id/sendButton"
+            android:layout_below="@id/cameraButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="113dp" />
+
+    </RelativeLayout>
+</ScrollView>

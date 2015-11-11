@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="louis.rachel.sarah.famfolio" >
+
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="12" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="louis.rachel.sarah.famfolio.Globals"
+        android:allowBackup="true"
+        android:icon="@drawable/fam"
+        android:label="@string/app"> >
+        <activity
+            android:name=".MainPage"
+            android:label="@string/app"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="louis.rachel.sarah.famfolio.PhotoIntentActivity"
+            android:label="@string/app_name"
+            android:value="com.example.loius.testing.MainPage" >
+        </activity>
+        <activity
+            android:name="louis.rachel.sarah.famfolio.PhotoIntent"
+            android:label="@string/title_activity_photo_intent"
+            android:value="com.example.loius.testing.MainPage" >
+        </activity>
+        <activity
+            android:name="louis.rachel.sarah.famfolio.PromptPage"
+            android:label="@string/title_activity_prompt_page"
+            android:parentActivityName="louis.rachel.sarah.famfolio.PromptOptions"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="louis.rachel.sarah.famfolio.MainPage" />
+        </activity>
+        <activity
+            android:name="louis.rachel.sarah.famfolio.SendFolio"
+            android:label="@string/title_activity_send_folio"
+            android:parentActivityName="louis.rachel.sarah.famfolio.MainPage"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="louis.rachel.sarah.famfolio.MainPage" />
+        </activity>
+        <activity
+            android:name="louis.rachel.sarah.famfolio.PromptOptions"
+            android:label="@string/title_activity_prompt_options"
+            android:parentActivityName="louis.rachel.sarah.famfolio.MainPage"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="louis.rachel.sarah.famfolio.MainPage" />
+        </activity>
+        <activity
+            android:name="louis.rachel.sarah.famfolio.PromptPageOld"
+            android:label="@string/title_activity_prompt_page_old"
+            android:parentActivityName="louis.rachel.sarah.famfolio.PromptOptions"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="louis.rachel.sarah.famfolio.PromptOptions" />
+        </activity>
+    </application>
+
+</manifest>
